@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #87CEEB;
+}
+
+canvas {
+  display: block;
+  image-rendering: pixelated;
+}
+
+.instructions {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-family: monospace;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.timer {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-family: monospace;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  padding-right: 55px;
+  border-radius: 5px;
+}
