@@ -13,7 +13,6 @@ window.addEventListener('resize', resizeCanvas);
 resizeCanvas();
 
 // -- Utility functions --
-
 const loadImage = (id) => {
     const svgData = new XMLSerializer().serializeToString(
         document.getElementById(id)
@@ -30,7 +29,6 @@ const loadImage = (id) => {
 }
 
 // -- Rendering --
-
 const farmer = loadImage('farmer-front');
 
 const draw = (img) => {
@@ -44,7 +42,6 @@ function render() {
     
     draw(farmer)
 }
-
 
 var stop = false;
 var frameCount = 0;

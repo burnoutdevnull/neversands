@@ -4,6 +4,7 @@
 <head>
   <title>Neversands</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="audio_player.css">
 </head>
 
 <body>
@@ -12,12 +13,24 @@
   <div class="instructions">
     Use ARROW KEYS to move
   </div>
-  <div id="clock" class="timer">
-    NESW
+  <div class="timer">
+    <div class="audio-player">
+      <div class="source-container">
+          Source
+          <input type="file" id="folder-input" webkitdirectory directory multiple>
+      </div>
+      <div class="controls">
+          <button class="control-btn" id="play-btn" onclick="togglePlay()">PLAY</button>
+          <button class="control-btn" onclick="nextTrack()">NEXT</button>
+      </div>
   </div>
-  <script src="src/resources.js"></script>
-  <script src="src/main.js"></script>
+    <div id="clock">&nbsp;</div>
+  </div>
   
+  <script src="src/resources.js"></script>
+  <script src="src/audioPlayer.js"></script>
+  <script src="src/main.js"></script>
+
 </body>
 
 </html>
